@@ -1,0 +1,1343 @@
+@font-face {
+    font-family: HermesFB_Bold;
+    src: url(fonts/HERMESFB-BOLD.OTF);
+}
+
+@font-face {
+    font-family: HermesFB_reg;
+    src: url(fonts/HERMESFB-REGULAR.OTF);
+}
+@font-face {
+    font-family: CALIBRIL;
+    src: url(fonts/CALIBRIL.TTF);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.main_content {
+    overflow: auto;
+    padding-bottom: 5%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    overflow: hidden;
+    grid-gap: 0;
+}
+
+header {
+    width: 100vw;
+    height: 6vh;
+    background: rgb(11, 63, 126);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+
+
+.social-links{
+    display: flex;
+    margin-top: 3px;
+    align-items: center;
+    text-align: center;
+    padding-right: 7%;
+    
+}
+
+.sl {
+    height: 60%;
+    margin-right: 15%
+}
+
+.social-icon {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.title {
+    background: white;
+    background-position: center center;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    height: 14vh;
+}
+
+.title .logo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.suspended_truck_banner{
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/banners/Main-Header-Banner-No-text.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+
+.banner_text {
+    padding-top: 10vh;
+    width: 60%;
+    height: auto;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    /*background: rgba(242, 238, 238, 0.6);*/
+}
+
+
+
+.banner_text h1 {
+    font-family: HermesFB_Bold;
+    font-size: 250%;
+    color: rgb(11, 63, 126);
+}
+
+.banner_text h2 {
+    font-family: HermesFB_reg;
+    font-size: 150%;
+    font-weight: 100;
+    display: block;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: HermesFB_Bold;
+    color:rgb(11, 63, 126);
+    margin-top: 45vh;
+    position: relative;
+    width: 100%;
+    /*padding-left: 10%;
+    padding-right: 10%;*/
+}
+
+.cards .card img {
+    width: 5vw;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    display: grid;
+    place-items: center;
+    background: white;
+    width: 20%;
+    height: 20vh;
+    border-radius: 40px 0px;
+    box-shadow: 5px 3px rgba(119, 119, 119, 0.2);
+    font-size: 150%;
+}
+
+.background_info {
+background: url('images/banners/Background-Banner.jpg');
+width: 100%;
+height: 60vh;
+z-index: -1;
+
+}
+
+.info_tag {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    padding-left: 5%;
+    justify-content:center;
+    align-items: center;
+    margin-top: 12vh;
+    margin-bottom: ;
+    position: relative;
+    overflow: hidden;
+}
+
+.info_tag .left {
+    background: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 35%;
+    height: 100%;
+    border-radius: 35px 0px 0px 0px;
+    margin-left: 5%;
+}
+
+.info_tag .left h1 {
+    font-family: HermesFB_Bold;
+    color:rgb(11, 63, 126);
+    font-size: 2vw;
+    padding-top: 5%;
+}
+
+.info_tag .left .underline, .workshop_details_list .left span, .spare_parts_list span ,
+.rates_container .left span{
+    display: block;
+    width: 2.5vw;
+    height: 0.3rem;
+    background: rgb(213, 29, 44);
+}
+
+.info_tag .left p {
+    font-family: CALIBRIL, sans-serif;
+    font-size: 1.2vw;
+    display: grid;
+    place-items: center;
+}
+
+.info_tag .right {
+    width: 65%;
+    height: auto;
+    margin-right: 5%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_tag .right img {
+    width: 90%;
+    height: 100%;
+    z-index: -1;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.workshop_details {
+    width: 100%;
+    height: auto;
+    overflow: hidden;;
+}
+
+.workshop_details .head , .floating-head .head{
+    height: 15vh;
+    width: 100%;
+    background:rgb(11, 63, 126);
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.workshop_details .query_text, .query_text {
+    padding-top: 1.5%;
+    padding-left: 10%;
+    font-family: CALIBRIL;
+}
+
+.workshop_details .query_text h3, .query_text h3 {
+    font-size: 1.7vw;
+}
+
+.workshop_details .query_text p , .query_text p{
+    font-size: 1.2vw;
+    padding-top: 5px;
+}
+
+.workshop_details .btn , .btn{
+    height: 50%;
+    width: 15%;
+    border: white 1px solid;
+    margin-right: 5%;
+}
+
+.btn .contact_us {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background:rgb(11, 63, 126);
+    color: white;
+}
+
+.btn .contact_us a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.7vw;
+}
+
+.btn .contact_us:hover, .form button:hover {
+    transform: scale(130%);
+    background:rgb(213, 29, 44);
+    border: none;
+}
+
+.workshop_details .workshop_pic img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.workshop_details_list {
+    width: 100%;
+    height: 45vh;
+    background: rgb(189, 183, 183);
+}
+
+.details_list {
+    width: 100%;
+    height: 100;
+    display: flex;
+    margin-top: -2%;
+}
+.workshop_details_list .left {
+    width: 40vw;
+    background: white;
+    padding-left:5%;
+    padding-right: 5%;
+    margin-left: 10%;
+    border-radius: 40px 0 0 0;
+}
+
+.workshop_details_list .left ul li, .workshop_details_list .right ul li{
+    font-family: CALIBRIL;
+    font-size: 1.3vw;
+}
+
+.workshop_details_list .right { 
+    width: 40vw;
+    background: rgb(11, 63, 126);
+    padding-left:5%;
+    padding-right: 5%;
+    color: white;
+    border-radius: 0 0 40px 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.workshop_details_list .left h1{
+    font-family: HermesFB_Bold;
+    color:rgb(11, 63, 126);
+    font-size: 2rem;
+    padding-top: 5%;
+}
+
+.spare_parts {
+    width: 100vw;
+    height: 60vh;
+    background: white;
+}
+
+.spare_parts_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.spare_parts_container .box_truck {
+    background: #1b1b1b;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.black_background {
+    z-index: 2;
+    /*background: #333232;*/
+}
+
+.spare_parts_container .box_truck img {
+    shape-outside: url(/images/Truck-transparent.png);
+    
+    z-index: 2;
+}
+
+.spare_parts_list {
+    width: 50%;
+    background: rgb(11, 63, 126);
+    padding: 2% 5%;
+    margin-top: 4.5%;
+    border-radius: 40px;
+    color: white;
+    margin-left: -3%;
+}
+
+.spare_parts_list h1 {
+    font-family: HermesFB_Bold;
+    font-size: 2.5rem;
+    padding-top: 5%;
+}
+
+.spare_parts_list ul li {
+    padding-top: 1%;
+    font-family: CALIBRI;
+    font-size: 1.1vw;
+}
+
+.rates {
+    width: 100vw;
+    height: 40vh;
+    background: white;
+}
+
+.rates_container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.rates_container .left {
+    width: 40%;
+    height: 100%;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.rates_container .left h1{
+    font-family: HermesFB_Bold;
+    color:rgb(11, 63, 126);
+    font-size: 3vw;
+    padding-top: 5%;
+}
+
+.rates_container .left ul {
+
+    list-style-type: none;
+    font-family: CALIBRIL;
+    font-size: 1.5vw;
+    margin-top: 5%;
+  }
+  
+  
+  .rates_container ul li:before {
+  
+    content: '';
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background-size: 70px;
+    background-image: url("images/MB-Tick-Mark.png");
+    background-position: center center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+  }
+
+  .rates_container .right {
+      width: 40%;
+      height: 100%;
+      align-items: center;
+      margin-right: 5%;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+  }
+
+   .floating-head {
+       width: 100%;
+       height:15vh;
+       display: flex;
+       position: relative;
+       margin-top: 10vh;
+       background: rgb(11, 63, 126)
+   }
+
+.rotating_carousel {
+    width: 100vw;
+    height: 50vh;
+    margin-top:;
+}
+
+.slider_container {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-top: 2%;
+}
+
+.slider_container .heading {
+    width: 100%;
+    height: 30%;
+    display: grid;
+    place-content: center;
+}
+
+.slider_container .heading h1 {
+    font-family: HermesFB_Bold;
+    color:rgb(11, 63, 126);
+    font-size: 4vw;
+}
+
+.slider_container .heading span {
+    display: block;
+    justify-self:center;
+    width: 6rem;
+    height: 0.3rem;
+    background: rgb(213, 29, 44);
+}
+
+.main-carousel {
+    width: 100%;
+    height: 50%;
+    margin-top: 5vh;
+    /*background: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;*/
+}
+
+.main-carousel .cell .slide_img {
+    /*width: 15vw;*/
+    max-height: 20vh;
+}
+
+.slider .slide_left, .slide_right {
+
+    display: grid;
+    place-content: center;
+    width: 6%;
+    height: 25%;
+    cursor: pointer;
+    
+}
+
+.slider .slide_left, .slide_right span{
+    font-size: 6rem;
+    color:rgb(11, 63, 126);
+}
+
+.slide_left:hover, .slide_right:hover {
+    transform: scale(130%);
+    transition: 1s ease all;
+}
+
+.contact_sect {
+    margin-top: 5vh;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.form_sect {
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.form_sect .call_to_action {
+    width: 100%;
+    height: 25%;
+}
+
+.form_sect .call_to_action h1{
+    font-family: HermesFB_Bold;
+    color:rgb(11, 63, 126);
+    font-size: 4em;
+    padding-top: 5%;
+}
+
+.form_sect .call_to_action span {
+    display: block;
+    width: 6rem;
+    height: 0.3rem;
+    background: rgb(213, 29, 44);
+}
+
+.form_sect .call_to_action p {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-family: CALIBRIL;
+    font-size: 1.3vw;
+}
+
+.form_sect .form {
+    display: grid;
+    width: 100%;
+    height: 40%;
+    margin-top: 5%;
+}
+
+.form_sect .form input{
+height: 25%;
+margin: 1%;
+border:2px solid rgba(186, 183, 183, 0.9);
+padding-left: 3%;
+}
+
+
+
+.form_sect .form .body {
+    width: 93%;
+    height: 65%
+}
+
+.form_sect .form #checkbox {
+    height: 10%;
+    color: rgb(11, 63, 126);
+    background-color: white;
+    margin-left: -20%;
+    margin-top: ;
+}
+
+.form_sect .form label {
+    font-family: CALIBRIL;
+    font-size: 1.5vw;
+    margin-left: -20%;
+} 
+
+.form form {
+    width: 100%;
+}
+
+form input {
+    width: 45%;
+}
+
+
+.form button {
+    width: 30%;
+    height: 30%;
+    cursor: pointer;
+    background:rgb(11, 63, 126);
+    color: white;
+    margin: 1%;
+    font-size: 1.5rem;
+    font-family: HermesFB_Bold;
+    border: none;
+}
+.contact_info {
+    width: 40%;
+    height: 100%;
+    background: rgb(0, 82, 155);
+    border-radius: 40px 0;
+    
+    color: white;
+}
+.contact_info .top {
+    width: 100%;
+    height: 20%;
+    padding:0;
+    background: rgb(11, 63, 126);
+    border-radius: 40px 0 0 0 ;
+}
+
+.contact_info .heading {
+    padding-left: 10%;
+    width: 100%;
+    height: auto;
+}
+
+.contact_info h2 {
+    font-family: HermesFB_Bold;
+    font-size: 3vw;
+    padding-top: 5%;
+    
+}
+
+.contact_info span {
+    display: block;
+    width: 3rem;
+    height: 0.3rem;
+    background: rgb(213, 29, 44);
+    padding-left: 10%;
+}
+
+.contact_info .details {
+    font-family: CALIBRI;
+    padding-left: 10%;
+}
+
+.contact_info .details p {
+    font-size: 1.4rem;
+    padding-top: 3%
+}
+
+.contact_info .details a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+.contact_info .details a img {
+    width: 4%;
+    display: grid;
+    place-items: center;
+    margin-right: 2%;
+}
+
+footer {
+    width: 100%;
+    height: 12%;
+    background:rgb(11, 63, 126);
+    position: relative;
+
+}
+
+footer .top_line {
+    width: 100%;
+    height: 10%;
+    background: rgb(0, 82, 155);
+}
+
+footer .footer{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-family: CALIBRI;
+    font-size: 1.2vw;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    padding-left: 5%;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer .social-links{
+    width: 20%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer .social-icon{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    height: 90%;
+    display: grid;
+    place-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        min-height: 100%;
+        overflow: hidden;
+    }
+    
+    .main_content {
+        display: block;
+        justify-content: center;
+        overflow: hidden;
+        height: auto;
+        /*grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+        overflow: hidden;*/
+    }
+
+    .suspended_truck_banner{
+        overflow: hidden;
+    }
+
+    .banner_text {
+        padding-top: 7vh;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        background: rgba(242, 238, 238, 0.6);
+        display: grid;
+        place-items: center;
+    }
+
+    .banner_text h1, h2 {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .cards {
+        display: block;
+        justify-content: center;
+        width: 80%;
+        margin-left: 20%;
+        position: absolute;
+        margin-top: 3vh;
+        overflow: hidden;
+    }
+
+    .card {
+        display: grid;
+        place-items: center;
+        background: white;
+        width: 50%;
+        height: 10vh;
+        border-radius: 40px ;
+        box-shadow: 5px 3px rgba(119, 119, 119, 0.2);
+        font-size: 2.4vw;
+        margin-bottom: 1%;
+        overflow: hidden;
+    }
+
+    .background_info {
+        width: 100%;
+        height: auto;
+    }
+    .info_tag {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin-top: 2%;
+    }
+
+    .info_tag .left h1 {
+        width: 100%;
+        font-family: HermesFB_Bold;
+        color: white;
+        font-size: 4vw;
+        padding-top: 5%;
+        
+    }
+
+    .info_tag .left {
+        background: rgb(0, 82, 155);   
+        padding-left: 5%;
+        width: 100%;
+        height: auto;
+        border-radius: 35px;
+        box-shadow: 5px #1b1b1b;
+        color: white;
+        margin: 0;
+    }
+
+    .info_tag span {
+        width: 5.5rem;
+        height: 0.3rem;
+        margin-bottom: 5%;
+    }
+
+    .info_tag .left p {
+        font-size: 4vw;
+    }
+
+    .info_tag .right {
+        width: 100%;
+        height: 48%;
+        border-radius: 35px;
+        margin-top: 3%;
+        justify-self: center;
+    }
+
+    .info_tag .right img {
+        border-radius: 35px;
+    }
+
+    .workshop_details {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        overflow: hidden;;
+    }
+    
+    .workshop_details .query_text h3, .rates .query_text h3 {
+        font-size: 4vw;
+    }
+    
+    .workshop_details .query_text p , .rates .query_text p{
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+
+    .workshop_details .query_text, .rates .query_text {
+        padding-top: 1.5%;
+        padding-left: 2%;
+        font-family: CALIBRIL;
+    }
+
+    .workshop_details .btn , .rates .btn{
+        height: 30%;
+        width: 20%;
+        border: white 1px solid;
+        margin-right: 5%;
+    }
+    
+    .btn .contact_us {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        background: rgb(11, 63, 126);
+        color: white;
+    }
+    
+    .btn .contact_us a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.7vw;
+    }
+
+    .workshop_details_list {
+        width: 100vw;
+        height: auto;
+        background: rgb(189, 183, 183);
+    }
+    
+    .details_list {
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-content: center;
+        background: white;
+        z-index: 1;
+        margin-top: ;
+    }
+    .workshop_details_list .left {
+        width: 100%;
+        background: white;
+        padding-left:5%;
+        padding-right: 5%;
+        margin-left: 5%;
+    }
+    
+    .workshop_details_list .left ul li, .workshop_details_list .right ul li{
+        font-family: CALIBRIL;
+        font-size: 100%;
+    }
+    
+    .workshop_details_list .right { 
+        width: 90%;
+        background: rgb(11, 63, 126);
+        padding-left:5%;
+        padding-right: 5%;
+        color: white;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 0 0 35px 35px;
+    }
+    
+    .workshop_details_list .left h1{
+        font-family: HermesFB_Bold;
+        color:rgb(11, 63, 126);
+        font-size: 150%;
+        padding-top: 5%;
+    }
+
+    .spare_parts {
+        width: 100vw;
+        height: auto;
+        background: transparent;
+    }
+    
+    .spare_parts_container {
+        width: 100%;
+        height: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .black_background {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        margin-left: 10%;
+    }
+    
+    .spare_parts_container .black_background .box_truck img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        /*
+        overflow: hidden;
+        object-fit:contain;*/
+    }
+    
+    .spare_parts_list {
+        background: rgb(11, 63, 126);
+        padding: 2% 5%;
+        width: 80%;
+        color: white;
+        justify-self: center;
+        margin-left: 10%;
+        border-radius: 40px;
+    }
+    
+    .spare_parts_list h1 {
+        font-family: HermesFB_Bold;
+        font-size: 150%;
+        padding-top: 5%;
+    }
+    
+    .spare_parts_list ul li {
+        font-family: CALIBRI;
+        font-size: 100%;
+    }
+    
+    .rates {
+        width: 100%;
+        height: auto;
+        background: white;
+    }
+    
+    .rates_container {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .rates_container .left {
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        align-items: center;
+        margin-top: 13%;
+    }
+    
+    .rates_container .left h1{
+        font-family: HermesFB_Bold;
+        color:rgb(11, 63, 126);
+        font-size: 180%;
+    }
+    
+    .rates_container .left ul {
+    
+        list-style-type: none;
+        font-family: CALIBRIL;
+        font-size: 1.5rem;
+      
+      }
+      
+      
+      .rates_container ul li:before {
+      
+        content: '';
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-size: 30px;
+        background-image: url("images/MB-Tick-Mark.png");
+        background-position: center center;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        margin-right: 15px;
+        font-size: 100%;
+      }
+    
+      .rates_container .right {
+          width: 80%;
+          height: 40vh;
+          align-items: center;
+          margin-left: 10%;
+          overflow: hidden;
+          margin-top: 15vh;
+      }
+
+      .rotating_carousel {
+        width: 90vw;
+        height: auto;
+        display: block;
+        justify-self: center;
+    }
+    
+    .slider_container {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .slider_container .heading {
+        width: 100%;
+        height: auto;
+        display: grid;
+        place-content: center;
+    }
+    
+    .slider_container .heading h1 {
+        font-family: HermesFB_Bold;
+        color:rgb(11, 63, 126);
+        font-size: 150%;
+        padding-top: 5%;
+    }
+    
+    .slider_container .heading span {
+        display: block;
+        justify-self:center;
+        width: 1.5rem;
+        height: 0.3rem;
+        background: rgb(213, 29, 44);
+    }
+    
+    .main-carousel {
+        width: 100%;
+        height: auto;
+        margin-top: 10vh;
+        margin-left: 5%;
+        /*background: white;
+        align-items: center;
+        justify-content: center;
+        display: flex;*/
+    }
+    
+    
+    .main-carousel .cell .slide_img {
+        width: 50%;
+        height: auto;
+    }
+
+    .contact_sect {
+        width: 100vw;
+        height: 150vh;
+        display: block;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .form_sect {
+        width: 100%;
+        height: 100vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: -50px;
+        position: absolute;
+        top: 0;
+    }
+    
+    .form_sect .call_to_action {
+        width: 100%;
+        height: auto;
+    }
+    
+    .form_sect .call_to_action h1{
+        font-family: HermesFB_Bold;
+        color:rgb(11, 63, 126);
+        font-size: 4vw;
+        padding-top: 1%;
+    }
+    
+    .form_sect .call_to_action span {
+        display: block;
+        width: 1.5rem;
+        height: 0.3rem;
+        background: rgb(213, 29, 44);
+    }
+    
+    .form_sect .call_to_action p {
+        font-family: CALIBRIL;
+        font-size: 2.2vw;
+    }
+    
+    .form_sect .form {
+        display: grid;
+        width: 100%;
+        height: auto;
+        margin-top: -9%
+    }
+    
+    .form_sect .form input{
+    height: 15%;
+    width: 93%;
+    margin: 1%;
+    border:1px solid rgba(186, 183, 183, 0.9);
+    padding-left: 1%;
+    }
+    
+    .form_sect .form .body {
+        width: 93%;
+        height: 45%
+    }
+    
+    .form_sect .form #checkbox {
+        height: 10%;
+        color: rgb(11, 63, 126);
+        background-color: white;
+        margin-left: -45%;
+    }
+    
+    .form_sect .form label {
+        font-family: CALIBRIL;
+        font-size: 2.5vw;
+        margin-left: -40%;
+    } 
+
+    form .form {
+        width: 100%;
+        margin-top: -10vh;
+    }
+    
+    form input {
+        width: 45%;
+    }
+    
+    
+    .form button {
+        width: 30%;
+        height: 30%;
+        cursor: pointer;
+        background:rgb(11, 63, 126);
+        color: white;
+        margin: 1%;
+        font-size: 150%;
+        font-family: HermesFB_Bold;
+        border: none;
+    }
+
+    .contact_info {
+        width: 80%;
+        height: auto;
+        margin-left: 5%;
+        background: rgb(0, 82, 155);
+        color: white;
+        padding-bottom: 3%;
+        top: ;
+        position: absolute;
+        bottom: 0;
+    }
+    .contact_info .top {
+        width: 100%;
+        height: 20%;
+        padding:0;
+        background: rgb(11, 63, 126);
+    }
+    
+    .contact_info .heading {
+        padding-left: ;
+    }
+    
+    .contact_info h2 {
+        font-family: HermesFB_Bold;
+        font-size: 3vw;
+        padding-top: 1%;
+        margin-left: -50%;
+    }
+    
+    .contact_info span {
+        display: block;
+        width: 1.5rem;
+        height: 0.3rem;
+        background: rgb(213, 29, 44);
+        padding-left: 10%;
+    }
+    
+    .contact_info .details {
+        font-family: CALIBRI;
+        padding-left: 10%;
+        display: block;
+        justify-content:center;
+        height: auto;
+    }
+    
+    .contact_info .details p {
+        font-size: 2.2vw;
+        padding-top: 1%
+    }
+    
+    .contact_info .details a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .contact_info .details address {
+        padding-bottom: 2%;
+        font-family: CALIBRI;
+        text-decoration: none;
+        font-style: normal;
+    }
+    
+    .contact_info .details a img {
+        width: 4%
+    }
+
+    footer {
+        width: 100vw;
+        height: 12%;
+        margin-top: ;
+        background:rgb(11, 63, 126);
+        position: relative;
+
+    }
+    
+    footer .top_line {
+        width: 100%;
+        height: 10%;
+        background: rgb(0, 82, 155);
+    }
+    
+    footer .footer{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        font-family: CALIBRI;
+        font-size: 100%;
+    }
+    
+    .footer a {
+        color: white;
+        text-decoration: none;
+        display: grid;
+        place-items: center;
+        padding-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .footer p {
+        color: white;
+    }
+    
+    .footer .social-links{
+        width: 40%;
+        height: 90%;
+    }
+    
+    .footer .social-icon{
+        width: 70%;
+        height: 50%;
+    }
+    
+    .copyright {
+        height: 90%;
+        display: grid;
+        place-content: center;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .suspended_truck_banner {
+        background-image: url("images/banners/Main-Header-Banner-4k.jpg");
+    }
+}
