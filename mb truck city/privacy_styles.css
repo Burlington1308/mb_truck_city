@@ -1,0 +1,56 @@
+@font-face {
+    font-family: HermesFB_Bold;
+    src: url(fonts/HERMESFB-BOLD.OTF);
+}
+
+@font-face {
+    font-family: HermesFB_reg;
+    src: url(fonts/HERMESFB-REGULAR.OTF);
+}
+@font-face {
+    font-family: CALIBRIL;
+    src: url(fonts/CALIBRIL.TTF);
+}
+
+.body {
+    width: 100vvw;
+    height: auto;
+}
+
+.content {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.content h1 {
+    text-transform: uppercase;
+    font-family: HermesFB_Bold;
+    color: rgb(11, 63, 126);
+    font-size: 2.5rem;
+}
+
+.content span {
+    display: block;
+    width: 3.5rem;
+    height: 0.3rem;
+    background: rgb(213, 29, 44);
+}
+
+.content p {
+    font-family: CALIBRIL;
+    font-size: 100%;
+    padding-top: 2vh;
+}
+
+.content a {
+    text-decoration: none;
+    color:rgb(11, 63, 126);
+    font-weight: bold;
+}
+
+.content ul {
+    font-family: CALIBRIL;
+    padding-left: 10%;
+    font-size: 100%;
+}
